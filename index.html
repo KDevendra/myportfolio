@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+ <!-- Optional theme -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+ 
+ <!-- Latest compiled and minified JavaScript -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<!----hero Section start---->
+
+	<div class="hero">
+		<nav>
+			
+			<ul>
+				
+				<li><h1 class="logo">GK_AFF<span>AIR</span></h1></li>
+				<li><a href="#">Home</a></li>
+				<li><a href="https://www.indiabix.com/general-knowledge/questions-and-answers/" target="_blank">G.K</a></li>
+				<li><a href="https://www.indiabix.com/current-affairs/questions-and-answers/" target="_blank">Current Affairs</a></li>
+				<li><a href="https://www.indiabix.com/aptitude/questions-and-answers/"  target="_blank">Applitude</a></li>
+				<li><a href="https://www.indiabix.com/logical-reasoning/questions-and-answers/" target="_blank">Logical</a></li>
+			</ul>
+		</nav>
+
+		<script>
+
+			$(function(){
+		  
+			
+				$("#mymodel").show(3000);
+				function hidebtn()
+				{
+				   $("#mymodel").fadeOut();
+				 } 
+				 $("#btnclose").on('click',function(){
+				   $("#mymodel").hide();
+				 })
+				
+			 });
+		  
+		  $j(document).ready(function() {
+			  if(localStorage.getItem('popState') != 'shown'){
+				  $j('#mymodel').delay(2000).fadeIn();
+				  localStorage.setItem('popState','shown')
+			  }
+		  
+			  $j('#btnclose, #mymodel').click(function() 
+			  {
+				  $j('#mymodel').fadeOut(); 
+			  });
+		  });
+		  
+		  </script>
+		   <div class="modal" id="mymodel" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-md col-sm-center" role="document">
+			  <div class="modal-content"  style="width: 330px;float: right;right: -361px;top: 130px;">
+				<div class="modal-body">
+					 <iframe src='https://webchat.botframework.com/embed/qnabotknowledge-bot?s=Jf-S-erLqyU.a10Q7UNog1NjS7i8rOw5ErN35hhfePazBBtOXXaAXBg'  style="width: 100%px;height: 400px;box-shadow: 0 20px 80px rgba(0,0,0,.6);border-radius: 5px;overflow: hidden;border: none;"></iframe>
+				 
+				</div>
+			  
+			
+			  </div>
+			</div>
+		  </div>
+		<div class="content">
+			<h4 class="text-white">Hello, Welcome to a place for</h4>
+			<h1 class="text-white">G.K,<span>Current Affair</span></h1>
+			<h3 class="text-white">Applitude,Reasoning,Verbal</h3>
+			<div class="newslatter">
+				<form>
+					<input type="email" name="email" id="mail" placeholder="Enter Your Email">
+					<input type="submit" name="submit" value="Lets Start">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!----About section start---->
+	<section class="about">
+		<div class="container">
+			<div class="main">
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<img src="img/blank.png">
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<div class="about-text">
+							<h2>About Us</h2>
+							<h5>Engineering<span> Students</span></h5>
+							<p>We are the College Students and we are here with our website, here we integrated a chatbot who will answer your all questions regarding many topics and this chat bot is build by using Microsoft Azure Services </p>
+							<button type="button" >Let's Talk</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-----service section start----------->
+	<div class="service">
+		<div class="title">
+			<h2>Our Services</h2>
+		</div>
+
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5>Education</h5>
+				<div class="pra">
+					<p>Here we provide you a platform for boosting your Applitudes Reasoning and many more</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-user"></i>
+				<h5>Chat Bot Support</h5>
+				<div class="pra">
+					<p>If you are facing any problems regarding any types of information you can ask to that Chat Bot</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-bell"></i>
+				<h5>Navigation Support</h5>
+				<div class="pra">
+					<p>For your convience we are also provided the navigation of main menus you can directly visit to your desired section</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<!------footer start--------->
+	<footer>
+		<p class="text-center">Engineering Students</p>
+		<p class="text-center" style="text-align: center;">For more information you can contact us</p>
+		<div class="text-center social-icon">
+			<a href="#"><i class="fab fa-facebook-f  social-icon "></i></a>
+			<a href="#"><i class="fab fa-instagram social-icon"></i></a>
+			<a href="#"><i class="fab fa-dribbble social-icon"></i></a>
+		</div>
+		
+	</footer>
+</body>
+</html>
